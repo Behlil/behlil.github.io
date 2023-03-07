@@ -72,14 +72,7 @@ export default function Sidebar() {
                             About
                         </Link>
                     </li>
-                    {/* <li className={getLinkClassNames('experience')}>
-                        <Link
-                            to="/experience"
-                            onClick={() => handleLinkClick('experience')}
-                        >
-                            Experience
-                        </Link>
-                    </li> */}
+                    
                     <li className={getLinkClassNames('projects')}>
                         <Link to="/projects" onClick={() => handleLinkClick('projects')}>
                             Projects
