@@ -1,0 +1,38 @@
+.navbar, .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-item{
+    margin: 0 1em;
+}
+
+.nav-item a {
+    /* display: block; */
+    padding: 10px 15px;
+    color: #20262E;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    /* add border transition */
+    /* transition: border-bottom 0.3s steps(1); */
+}
+
+
+
+.nav-item a:hover {
+    color: #913175;
+}
+.nav-item.active a{
+    color: #CD5888;
+    border-bottom:  4px solid #CD5888;
+}

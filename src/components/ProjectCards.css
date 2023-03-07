@@ -1,0 +1,21 @@
+/* Projects.css */
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    
+
+}
+.cards h1{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000;
+}
+@media screen and (max-width: 768px) {
+    .projects {
+        flex-direction: column;
+    }
+}

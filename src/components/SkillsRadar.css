@@ -1,0 +1,20 @@
+.radar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 50px;
+    background-color: #fafafa;
+}
+.radar h1{
+    font-size: 3rem;
+    margin-bottom: 50px;
+    width: 60%;
+    
+    color: #AD7BE9;
+}
+.radar span{
+    font-size: 1rem;
+    display: block;
+    color: #4D455D;
+}

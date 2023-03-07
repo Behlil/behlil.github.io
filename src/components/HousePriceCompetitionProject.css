@@ -1,0 +1,75 @@
+.housepriceproject {
+
+    font-family: Arial, sans-serif;
+    margin: 30px 10em;
+    padding: 10px 20px;
+    background-color: #fafafa;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.housepriceproject h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.housepriceproject h2 {
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.housepriceproject p {
+    /* font-size: 18px; */
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.housepriceproject .cmd {
+    font-family: monospace;
+    background-color: #d4d0d0;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+.housepriceproject ol {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    /* font-size: 18px; */
+    line-height: 1.5;
+    counter-reset: mycounter;
+}
+
+.housepriceproject li {
+    counter-increment: mycounter;
+    margin-bottom: 10px;
+}
+
+.housepriceproject li:before {
+    /* content: counter(mycounter) ". "; */
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.housepriceproject a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.housepriceproject a:hover {
+    text-decoration: underline;
+}
+
+.back-link {
+    position: absolute;
+    top: 100px;
+    left: 80px;
+}
+
+.back-link a {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #ce1e1e;
+    text-decoration: none;
+}
