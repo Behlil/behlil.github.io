@@ -12,10 +12,12 @@ import Experience from './Pages/Experience'
 import Recommendations from './Pages/Recommendations'
 import Services from './Pages/Services'
 import Navbar from './components/Navbar'
+import ScrollRestoration from './components/ScrollRestoration'
 
 function App() {
   return (
     <div className="app">
+      <ScrollRestoration />
       <Navbar />
       <div className="content">
         <Routes>
