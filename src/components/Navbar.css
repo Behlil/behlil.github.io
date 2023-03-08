@@ -62,7 +62,8 @@
         align-items: center;
         padding: 0 10px;
     }
-    .navbar .show{
+
+    .navbar .show {
         height: 400px;
     }
 
@@ -111,6 +112,7 @@
         text-decoration: none;
         list-style: none;
     }
+
     .nav-item a {
         display: block;
         color: #141414;
