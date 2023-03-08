@@ -11,12 +11,11 @@
   right: 0;
   z-index: 999;
   background-color: #ffffff;
-  height: 80px;
-  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.2);
+
 }
 
 .content {
   flex: 1;
-  margin-top: 80px;
+  margin-top: 4em;
   background-color: #f1f1f1;
 }

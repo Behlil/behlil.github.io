@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
+import { FaBars } from 'react-icons/fa';
 
 export default function Sidebar() {
     const [active, setActive] = useState('home');
@@ -59,8 +60,12 @@ export default function Sidebar() {
     return (
         <div className="navbar">
             <nav className="nav">
+                <div className="nav-header">
+                    <button className="toggle-nav" onClick={handleToggleNav}>
+                        <FaBars />
+                    </button>
+                </div>
 
-                
                 <ul className={`nav-list ${showNav ? 'show' : ''}`}>
                     <li className={getLinkClassNames('home')}>
                         <Link to="/" onClick={() => handleLinkClick('home')}>
@@ -72,7 +77,7 @@ export default function Sidebar() {
                             About
                         </Link>
                     </li>
-                    
+
                     <li className={getLinkClassNames('projects')}>
                         <Link to="/projects" onClick={() => handleLinkClick('projects')}>
                             Projects
