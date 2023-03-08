@@ -157,21 +157,22 @@
     .home-section1 {
         margin: 0;
         padding: 0;
-        height: 90vh;
+        /* height: 90vh; */
         background-color: #EDF1D6;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding: 2em 0;
 
     }
 
     .home-section1 h2 {
         /* margin-top: 6em; */
-        max-width: 60%;
+        max-width: 85%;
         color: #40513B;
         text-align: left;
-        font-size: 2.1em;
+        font-size: 1.9em;
         font-family: 'Roboto Mono', monospace;
         font-weight: 600;
     }
@@ -202,7 +203,7 @@
     /* Section 2 */
     .home-section2 {
         background-color: #A459D1;
-        padding: 7em 5em;
+        padding: 7em 2em;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -247,7 +248,7 @@
     /* Section 3 */
     .home-section3 {
         background-color: #20262E;
-        padding: 7em 5em;
+        padding: 7em 2em;
         display: flex;
         flex-direction: column-reverse;
         gap: 3em;
