@@ -1,8 +1,5 @@
-// import "./styles.css";
-import "./SkillsRadar.css"
 import React from "react";
-
-
+import "./SkillsRadar.css";
 import {
     Radar,
     RadarChart,
@@ -51,31 +48,29 @@ const data = [
     }
 ];
 
-
 export default function SkillsRadar() {
     return (
         <div className="radar">
             <h1>Unlocking the full potential of data <span>requires a diverse set of skills. Here's a radar chart showcasing my strengths in various areas of data analysis.</span></h1>
-
-            <RadarChart
-                cx={300}
-                cy={250}
-                outerRadius={150}
-                width={600}
-                height={500}
-                data={data}
-            >
-                <PolarGrid />
-                <PolarAngleAxis dataKey="subject" />
-                <PolarRadiusAxis />
-                <Radar
-                    name="skills"
-                    dataKey="A"
-                    stroke="#E96479"
-                    fill="#E96479"
-                    fillOpacity={0.7}
-                />
-            </RadarChart>
+            <ResponsiveContainer width="90%" height={500}>
+                <RadarChart
+                    cx="50%"
+                    cy="50%"
+                    outerRadius="80%"
+                    data={data}
+                >
+                    <PolarGrid />
+                    <PolarAngleAxis dataKey="subject" />
+                    <PolarRadiusAxis />
+                    <Radar
+                        name="skills"
+                        dataKey="A"
+                        stroke="#E96479"
+                        fill="#E96479"
+                        fillOpacity={0.7}
+                    />
+                </RadarChart>
+            </ResponsiveContainer>
         </div>
     );
 }

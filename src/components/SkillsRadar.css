@@ -1,3 +1,4 @@
+@media screen and (min-width: 600px) {
 .radar{
     display: flex;
     flex-direction: column;
@@ -9,7 +10,7 @@
 .radar h1{
     font-size: 3rem;
     margin-bottom: 50px;
-    width: 60%;
+    width: 90%;
     
     color: #AD7BE9;
 }
@@ -18,3 +19,28 @@
     display: block;
     color: #4D455D;
 }
+
+
+}
+@media screen and (max-width: 600px) {
+    .radar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+        padding: 50px;
+        background-color: #fafafa;
+    }
+    .radar h1{
+        font-size: 3rem;
+        margin-bottom: 50px;
+        width: 90%;
+        
+        color: #AD7BE9;
+    }
+    .radar span{
+        font-size: 1rem;
+        display: block;
+        color: #4D455D;
+    }
+    }
