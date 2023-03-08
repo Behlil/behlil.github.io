@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Card from './Card';
-// import projectsData from '../data/Data';
 import './ProjectCards.css'
 import FilterBar from './FilterBar';
 import img1 from '../Images/analysis.png';
