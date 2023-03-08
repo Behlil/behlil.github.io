@@ -4,12 +4,13 @@
     border-radius: 4px;
     color: #000;
     background: #fff;
-    width: 400px;
+    /* border: 2px solid #333231; */
+    border-radius: 7px;
+    width: 27%;
     height: 400px;
     transition: 0.5s;
     cursor: pointer;
     
-    box-shadow: 0 0 8px 0 rgb(124, 121, 121);
 }
 
 .card img {
@@ -36,6 +37,6 @@
 }
 .card:hover{
     box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.5);
-    transform: scale(1.03);
+    /* transform: scale(1.03); */
     transition: 0.5s;
 }

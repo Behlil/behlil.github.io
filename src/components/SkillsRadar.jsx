@@ -52,10 +52,11 @@ export default function SkillsRadar() {
     return (
         <div className="radar">
             <h1>Unlocking the full potential of data <span>requires a diverse set of skills. Here's a radar chart showcasing my strengths in various areas of data analysis.</span></h1>
-            <ResponsiveContainer width="90%" height={400}>
+            <ResponsiveContainer width="90%" height={300}>
                 <RadarChart
                     cx="50%"
                     cy="50%"
+                    
                     outerRadius="60%"
                     data={data}
                 >
@@ -67,7 +68,7 @@ export default function SkillsRadar() {
                         dataKey="A"
                         stroke="#E96479"
                         fill="#E96479"
-                        fillOpacity={0.7}
+                        fillOpacity={0.5}
                     />
                 </RadarChart>
             </ResponsiveContainer>
