@@ -32,14 +32,14 @@
         background-color: #fafafa;
     }
     .radar h1{
-        font-size: 3rem;
-        margin-bottom: 50px;
+        font-size: 2rem;
+        margin-bottom: 2em;
         width: 90%;
         
         color: #AD7BE9;
     }
     .radar span{
-        font-size: 1rem;
+        font-size: 1.1rem;
         display: block;
         color: #4D455D;
     }

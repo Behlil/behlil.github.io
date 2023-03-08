@@ -65,7 +65,7 @@
     .education {
         margin-top: 50px;
         /* height: 70vh; */
-        padding: 1em 5em;
+        padding: 1em ;
     }
 
     .education h2 {
@@ -92,7 +92,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 80%;
+        width: 90%;
         height: 250px;
         padding: 50px 0;
         color: #000;
