@@ -17,7 +17,7 @@ export default function FilterBar({ technologies, onChange }) {
 
     return (
         <div className="filter-bar">
-            <label>technology:</label>
+            <label className='filter-label'>Technology:</label>
             {technologies.map((technology) => (
                 <div key={technology} className="tech">
                     <input

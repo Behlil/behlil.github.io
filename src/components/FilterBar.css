@@ -8,11 +8,17 @@
         color: #000;
     }
 
+    .filter-label{
+        font-size: 1.2em;
+        margin-right: 1rem;
+        color: #829460;
+    }
+
     .filter-bar label {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 8em;
+        width: 7rem;
     }
 
     .tech {
@@ -22,28 +28,32 @@
         justify-content: center;
         align-items: center;
         color: #000;
+        gap: 0.3em;
     }
 
     .filter-bar input[type="checkbox"] {
-        margin-right: 0.5rem;
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
     }
 
     .filter-bar button {
-        background-color: #b0e6f7;
-        color: #000;
+        background-color: #98aa75;
+        color: #eee;
         border: none;
         border-radius: 4px;
         padding: 0.6rem 1.2rem;
         cursor: pointer;
+        transition: all 0.2s ease-out;
     }
 
     .filter-bar button:hover {
-        background-color: #fa8072;
+        background-color: #829460;
+        transform: scale(1.1);
     }
 }
 
 @media screen and (max-width: 1140px) {
-    .filter-bar{
+    .filter-bar {
         display: none;
     }
 }
