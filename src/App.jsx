@@ -13,6 +13,7 @@ import Recommendations from './Pages/Recommendations'
 import Services from './Pages/Services'
 import Navbar from './components/Navbar'
 import ScrollRestoration from './components/ScrollRestoration'
+import MnistProject from './components/MnistProject'
 
 function App() {
   return (
@@ -27,7 +28,8 @@ function App() {
           <Route path='/experience' element={<Experience />} />
           <Route path='/projects' >
             <Route index element={<Projects />} />
-            <Route path='HousePriceCompetition' caseSensitive={false} element={<HousePriceCompetitionProject />} />
+            <Route path='House-Price-Competition' caseSensitive={false} element={<HousePriceCompetitionProject />} />
+            <Route path='mnist-project' caseSensitive={false} element={<MnistProject />} />
           </Route>
           <Route path='/recommendations' element={<Recommendations />} />
           <Route path='/services' element={<Services />} />
