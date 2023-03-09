@@ -19,7 +19,7 @@ export default function FilterBar({ technologies, onChange }) {
         <div className="filter-bar">
             <label>technology:</label>
             {technologies.map((technology) => (
-                <div key={technology}>
+                <div key={technology} className="tech">
                     <input
                         type="checkbox"
                         id={technology}

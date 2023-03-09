@@ -7,9 +7,9 @@
     max-width: 600px;
     height: 70vh;
     padding: 20px;
-    background-color: #524f4f;
-    box-shadow: 0 0 10px 0 rgb(255, 255, 255);
-    color: #ddd;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 0 rgb(145, 142, 142);
+    color: #302e2e;
     border-radius: 7px;
 }
 
@@ -65,16 +65,17 @@
     margin-top: 1em;
     padding: 10px 20px;
     background-color: #f99317e5;
-    color: #333333;
+    color: #1b1b1b;
     border: none;
     border-radius: 5px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease-out;
 
 }
 
 .contact-container button[type='submit']:hover {
     background-color: #f99317;
-    transform: scale(1.03);
+    transform: scale(1.01);
+    /* box-shadow: 0 0 10px 0 rgb(31, 30, 30); */
 }

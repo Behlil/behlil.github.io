@@ -1,21 +1,29 @@
 /* Projects.css */
 
-.project-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2em;
-    
-
-}
 .cards h1{
     text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
+    
     color: #000;
 }
-@media screen and (max-width: 768px) {
-    .projects {
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    background-color: #EEEEEE;
+    padding: 2em;
+    
+    
+
+}
+
+@media screen and (max-width: 940px) {
+    .project-cards {
         flex-direction: column;
+        gap: 3em;
+        padding: 0;
     }
 }
