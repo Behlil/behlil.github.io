@@ -1,5 +1,5 @@
 import * as React from "react";
-import { LineChart, Line } from "recharts";
+import { LineChart, Line, XAxis, ResponsiveContainer } from "recharts";
 import "./DataAnalysisLineChart.css"
 
 const data = [
@@ -52,9 +52,12 @@ const data = [
 export default function DataAnalysisLineChart() {
     return (
         <div className="dataanalysislineChart">
-            <LineChart width={800} height={300} data={data}>
-            <Line type="monotone" dataKey="pv" stroke="#E96479" strokeWidth={2}   />
-            </LineChart>
+            <ResponsiveContainer width={600} height="4em">
+            <LineChart  data={data} title="Data Analysis Trends">
+                <XAxis dataKey="name" />
+            <Line type="monotone" dataKey="pv" stroke="#E96479" strokeWidth={2} dot={<p></p>}  />
+                </LineChart>
+            </ResponsiveContainer>
         </div>
     );
 }
