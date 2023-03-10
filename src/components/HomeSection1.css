@@ -73,6 +73,7 @@
     .home-section1 {
         margin: 0;
         padding: 0;
+        /* height: 100vh; */
         background-color: #dadbd0;
         display: flex;
         flex-direction: column;
@@ -149,6 +150,7 @@
     .home-section1 {
         margin: 0;
         padding: 0;
+        height: 120vh;
         background-color: #dadbd0;
         display: flex;
         flex-direction: column;
