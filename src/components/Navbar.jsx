@@ -47,6 +47,7 @@ export default function Sidebar() {
         }
         setActive(link);
         setShowNav(false);
+        
     };
 
     const getLinkClassNames = (link) => {
