@@ -13,7 +13,7 @@ export default function HomeSection1() {
                 <Link to="contact">Contact me</Link>
             </div>
             <div className='home-graphs'>
-                <img src={graph1} alt="" />
+                <img src={graph1} alt="job trends" />
             </div>
         </div>
     )
