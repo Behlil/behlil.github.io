@@ -8,7 +8,7 @@ export default function HomeSection1() {
 
         <div className='home-section1'>
             <div className="text-section">
-                <h2>Unlocking <span className='highlighted'>insights</span> through data analysis to drive <span className="highlighted">informed decision-making</span> and propel your business forward.</h2>
+                <h2>Unlocking <span className='highlighted'>insights</span> through <span className="highlighted">data analysis</span> to drive <span className="highlighted">informed decision-making</span> and propel your business forward.</h2>
                 <Link to="contact">Contact me</Link>
             </div>
             <div className='home-graphs'>
