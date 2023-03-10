@@ -1,8 +1,7 @@
 import React from 'react'
 import "./HomeSection1.css";
 import { Link } from 'react-router-dom'
-import DataAnalysisLineChart from './DataAnalysisLineChart';
-import graph1 from "../Images/data-trends.png"
+import graph1 from "../Images/Data-trends.png"
 
 export default function HomeSection1() {
     return (
