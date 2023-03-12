@@ -9,7 +9,6 @@ export default function Card({ project }) {
                 <img src={project.image} alt={project.title} />
                 <div className="card-content">
                     <h2>{project.title}</h2>
-                    <Link to={`/projects/${project.link}`}>View project</Link>
                 </div>
                 <Outlet />
             </Link>

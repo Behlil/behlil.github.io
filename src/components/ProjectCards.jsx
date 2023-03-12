@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 import Card from './Card';
 import './ProjectCards.css'
 import FilterBar from './FilterBar';
-import img1 from '../Images/analysis.png';
-import img2 from '../Images/powerbi.png';
+import img1 from "../Images/house.jpg"
+import img2 from '../Images/mnist.png';
 
 
 export default function ProjectCards() {
     const projectsData = [
         {
             id: 1,
-            link:"House-Price-Competition",
+            link: "House-Price-Competition",
             title: 'House Price Competition',
             description: 'This is the description for project 1.',
             image: img1,
@@ -19,14 +19,14 @@ export default function ProjectCards() {
         },
         {
             id: 2,
-            link:"mnist-project",
-            title: 'Project 2',
+            link: "mnist-project",
+            title: 'MNIST Handwritten Digit Recognition',
             description: 'This is the description for project 2.',
             image: img2,
             url: 'https://example.com/project2',
             technologies: ['Python', 'SQL'],
         }
-        
+
     ];
     const [selectedTechnology, setSelectedTechnology] = useState('all');
     const [filteredProjects, setFilteredProjects] = useState(projectsData); // <--- add this line
