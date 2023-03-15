@@ -9,6 +9,7 @@ export const projectsData = [
         image: img1,
         url: 'https://github.com/Behlil/House-Price-Competition/blob/main/notebook.ipynb',
         technologies: ['Python'],
+        domain: 'Data Science',
     },
     {
         id: 2,
@@ -17,6 +18,7 @@ export const projectsData = [
         image: img2,
         url: 'https://example.com/project2',
         technologies: ['Python', 'SQL'],
+        domain: 'Data Science',
     },
     {
         id: 3,
@@ -25,6 +27,7 @@ export const projectsData = [
         image: 'https://via.placeholder.com/150',
         url: 'https://example.com/project3',
         technologies: ['Python', 'SQL', 'Power BI'],
+        domain: 'Data Science',
     },
     {
         id: 4,
@@ -33,6 +36,7 @@ export const projectsData = [
         image: 'https://via.placeholder.com/150',
         url: 'https://example.com/project3',
         technologies: ['Python', 'SQL', 'Power BI'],
+        domain: 'Data Science',
     },
     {
         id: 5,
@@ -41,6 +45,7 @@ export const projectsData = [
         image: 'https://via.placeholder.com/150',
         url: 'https://example.com/project3',
         technologies: ['Python', 'SQL', 'Power BI'],
+        domain: 'Data Science',
     },
     {
         id: 6,
@@ -49,6 +54,7 @@ export const projectsData = [
         image: 'https://via.placeholder.com/150',
         url: 'https://example.com/project3',
         technologies: ['Python', 'SQL', 'Power BI'],
+        domain: 'Data Science',
     },
 ];
 

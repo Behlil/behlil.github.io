@@ -7,8 +7,10 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
+  
 
+  
   &::before {
     content: '';
     position: absolute;
@@ -19,8 +21,13 @@ const Container = styled.div`
     background-image: url(${dataAnalytics});
     background-size: cover;
     background-position: center;
-    opacity: 0.5;
+    opacity: 0.6;
   }
+
+  @media screen and (max-width: 768px) {
+    height: 70vh;
+  }
+
 `;
 
 const Content = styled.div`
@@ -33,9 +40,7 @@ const Title = styled.h1`
   margin: 0;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
-  background: -webkit-linear-gradient(90deg, #000 0%, #003865 90%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  
 
   @media screen and (max-width: 768px) {
     font-size: 3rem;
@@ -85,5 +90,5 @@ export default function Introduction() {
         <Button>View my work</Button>
       </Content>
     </Container>
-  );
+  ); s
 }
