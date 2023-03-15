@@ -9,7 +9,6 @@ import Header from './components/Header'
 import './App.css'
 import HousePriceCompetitionProject from './components/HousePriceCompetitionProject'
 import Experience from './Pages/Experience'
-import Recommendations from './Pages/Recommendations'
 import Services from './Pages/Services'
 import Navbar from './components/Navbar'
 import ScrollRestoration from './components/ScrollRestoration'
@@ -31,7 +30,6 @@ function App() {
             <Route path='House-Price-Competition' caseSensitive={false} element={<HousePriceCompetitionProject />} />
             <Route path='mnist-project' caseSensitive={false} element={<MnistProject />} />
           </Route>
-          <Route path='/recommendations' element={<Recommendations />} />
           <Route path='/services' element={<Services />} />
           <Route path="*" element={<h1>404: Not Found</h1>} />
         </Routes>

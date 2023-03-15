@@ -29,9 +29,7 @@ export default function Sidebar() {
                 case '/experience':
                     setActive('experience');
                     break;
-                case '/recommendations':
-                    setActive('recommendations');
-                    break;
+                
                 case '/services':
                     setActive('services');
                     break;
@@ -84,14 +82,7 @@ export default function Sidebar() {
                             Projects
                         </Link>
                     </li>
-                    <li className={getLinkClassNames('recommendations')}>
-                        <Link
-                            to="/recommendations"
-                            onClick={() => handleLinkClick('recommendations')}
-                        >
-                            Recommendations
-                        </Link>
-                    </li>
+                    
                     <li className={getLinkClassNames('services')}>
                         <Link to="/services" onClick={() => handleLinkClick('services')}>
                             Services
