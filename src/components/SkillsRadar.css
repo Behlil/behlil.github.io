@@ -5,14 +5,14 @@
     align-items: center;
     gap: 2em;
     padding: 50px;
-    background-color: #fafafa;
+    background-color: #F1F1F1;
 }
 .radar h1{
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 50px;
     width: 90%;
     
-    color: #AD7BE9;
+    color: #333;
 }
 .radar span{
     font-size: 1rem;
@@ -36,7 +36,7 @@
         font-size: 2rem;
         margin-bottom: 2em;
         width: 90%;
-        
+        font-weight: 600;
         color: #AD7BE9;
     }
     .radar span{

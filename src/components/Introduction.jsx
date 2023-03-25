@@ -1,94 +1,53 @@
 import React from 'react';
 import styled from 'styled-components';
-import dataAnalytics from '../Images/data-analytics3.jpg';
 
-const Container = styled.div`
-  position: relative;
+// Create a styled component for the introduction section
+const Introduction = styled.section`
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 100vh;
-  
+  justify-content: center;
+  background-color: #fff;
+  padding: 2rem;
+  height: 90vh;
 
-  
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(${dataAnalytics});
-    background-size: cover;
-    background-position: center;
-    opacity: 0.6;
+  @media (max-width: 768px) {
+    height: 50vh;
   }
-
-  @media screen and (max-width: 768px) {
-    height: 100vh;
-  }
-
 `;
 
-const Content = styled.div`
-  text-align: center;
-  z-index: 1;
-`;
-
-const Title = styled.h1`
+// Create a styled component for the heading
+const Heading = styled.h1`
   font-size: 4rem;
-  margin: 0;
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  
+  color: #272343;
+  margin-bottom: 1rem;
 
-  @media screen and (max-width: 768px) {
-    font-size: 3rem;
+  @media (max-width: 768px) {
+    font-size: 2rem;
   }
 `;
 
-const Subtitle = styled.p`
-  font-size: 2rem;
-  color: #000;
-  margin: 0;
-  font-family: 'Lato', sans-serif;
-  color: #000;
-
-  @media screen and (max-width: 768px) {
-    font-size: 1.5rem;
-  }
+// Create a styled component for the paragraph
+const Paragraph = styled.p`
+  font-size: 1.5rem;
+  color: #666666;
+  text-align: center;
+  max-width: 800px;
 `;
 
-const Button = styled.button`
-  background-color: rgba(0, 0, 0, 0.85);
-  border: none;
-  border-radius: 5px;
-  color: white;
-  font-size: 1.4rem;
-  padding: 1rem 2rem;
-  margin-top: 2rem;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
 
-  &:hover {
-    background-color: #000;
-    box-shadow: 0 0 10px #000;
-  }
-
-  @media screen and (max-width: 768px) {
-    font-size: 1.2rem;
-    padding: 0.8rem 1.5rem;
-  }
-`;
-
-export default function Introduction() {
+const Intro = () => {
   return (
-    <Container>
-      <Content>
-        <Title>Hi, I'm Ouassim Behlil</Title>
-        <Subtitle>A Marketing Analyst</Subtitle>
-        <Button>View my work</Button>
-      </Content>
-    </Container>
-  ); s
-}
+    <Introduction>
+      <Heading>Hello, I'm Ouassim Behlil</Heading>
+      <Paragraph>
+        I have a passion for solving complex problems and helping organizations
+        make better decisions. My love for mathematics and probabilities has led
+        me to this dynamic field, where I can apply my analytical skills and
+        expertise to make sense of complex data sets.
+      </Paragraph>
+    </Introduction>
+  );
+};
+
+export default Intro;

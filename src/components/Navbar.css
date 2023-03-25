@@ -2,7 +2,7 @@
 
     .navbar {
         height: 80px;
-
+        
     }
 
     .navbar,
@@ -27,7 +27,7 @@
     .nav-item a {
         /* display: block; */
         padding: 10px 15px;
-        color: #20262E;
+        color: #ffe;
         text-decoration: none;
         font-weight: bold;
         font-size: 1.2rem;
@@ -37,13 +37,11 @@
 
 
 
-    .nav-item a:hover {
-        color: #913175;
-    }
+    
 
     .nav-item.active a {
-        color: #CD5888;
-        border-bottom: 4px solid #CD5888;
+        
+        border-bottom: 4px solid #fff;
     }
 
     .toggle-nav {
@@ -79,8 +77,8 @@
         background: none;
         border: none;
         cursor: pointer;
-        font-size: 2rem;
-        color: #0e0c0c;
+        font-size: 1.8rem;
+        color: #fff;
     }
 
     .nav-list {

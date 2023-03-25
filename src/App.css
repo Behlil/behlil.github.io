@@ -1,7 +1,14 @@
+@font-face {
+  font-family: 'Metropolis';
+  src: url('./Fonts/metropolis.semi-bold.otf');
+}
+
 .app {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-family: 'Metropolis', sans-serif;
+
 }
 
 .navbar {
@@ -10,7 +17,7 @@
   left: 0;
   right: 0;
   z-index: 999;
-  background-color: #ffffff;
+  background-color: #181823;
   width: 100vw;
 
 }
