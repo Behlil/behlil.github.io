@@ -24,7 +24,7 @@ const ProjectContainer = styled.div`
   border: 1px solid #ccc;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
   width: 380px; // Set a fixed width
-  height: 500px; // Set a fixed height
+  height: 460px; // Set a fixed height
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   overflow: hidden;
@@ -62,7 +62,7 @@ const ProjectDomain = styled.p`
 // A styled component for the project description
 const ProjectDescription = styled.p`
  
-  font-size: 16px;
+  font-size: 14px;
   padding: 0 15px ;
 `;
 
@@ -86,7 +86,7 @@ const ProjectTag = styled.span`
 // A styled component for the project image container
 const ProjectImageContainer = styled.div`
   width: 100%; // Set a fixed width
-  height: 250px; // Set a fixed height
+  height: 200px; // Set a fixed height
   overflow: hidden; // Hide the overflow of the image
 
   & @media (max-width: 768px) {
@@ -106,7 +106,7 @@ const Project = ({ title, domain, description, image, tag }) => {
                 <ProjectImage src={image} alt={title} />
             </ProjectImageContainer>
             <ProjectTitle>{title}</ProjectTitle>
-            <ProjectDomain>{domain}</ProjectDomain>
+            {/* <ProjectDomain>{domain}</ProjectDomain> */}
             <ProjectDescription>{description}</ProjectDescription>
             <ProjectTagContainer>
                 {tag.map(t => <ProjectTag key={t}>{t}</ProjectTag>)}

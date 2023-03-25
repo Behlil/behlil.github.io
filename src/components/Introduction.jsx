@@ -7,7 +7,7 @@ const Introduction = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
+  background-color: #CBE4DE;
   padding: 2rem;
   height: 90vh;
 
@@ -23,6 +23,7 @@ const Heading = styled.h1`
   margin-bottom: 1rem;
 
   @media (max-width: 768px) {
+    margin-top: 4rem;
     font-size: 2rem;
   }
 `;

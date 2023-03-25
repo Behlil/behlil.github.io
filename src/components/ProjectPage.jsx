@@ -10,7 +10,13 @@ const ProjectsContainer = styled.div`
   flex-wrap: wrap;
   
   justify-content: center;
-  gap: 10px; // Use flexbox gap to create space between items
+  gap: 20px; // Use flexbox gap to create space between items
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    }
 `;
 
 const Title = styled.h1`
@@ -46,18 +52,18 @@ const Projects = () => {
     // Some dummy data for the projects
     const projects = [
         {
-            title: "House Price Prediction Competition",
-            domain: "Web Development",
-            description: "A web app that uses D3.js to create interactive charts and graphs.",
+            title: "House Price Prediction",
+            domain: "Machine Learning",
+            description: " Using Python and scikit-learn, a popular machine learning library, I built a regression model that can learn from historical data and make predictions for new houses.",
             image: house_img,
-            tag: ["React", "D3", "JavaScript"]
+            tag: ["Python", "Pandas", "Scikit-learn"]
         },
         {
-            title: "Sentiment Analysis with Python",
+            title: "Digits Recognition with MNIST",
             domain: "Machine Learning",
-            description: "A Python script that uses natural language processing to analyze the sentiment of text.",
+            description: "MNIST is a project that involves recognizing handwritten digits from images. Using Keras, a high-level neural network framework, and matplotlib, a visualization library, I built and trained a convolutional neural network that can classify the images into 10 categories",
             image: digits_img,
-            tag: ["Python", "NLP", "scikit-learn"]
+            tag: ["Python", "Keras", "matplotlib"]
         },
         {
             title: "E-commerce Website with Shopify",
