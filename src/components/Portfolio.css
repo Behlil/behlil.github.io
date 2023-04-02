@@ -1,0 +1,50 @@
+.portfolio {
+    padding: 2rem;
+    background-color: #f0f0f0;
+}
+
+.portfolio-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+}
+
+.portfolio-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-image {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-content {
+    flex-grow: 1;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.portfolio-project-title {
+    font-size: 1.5rem;
+}
+
+.portfolio-project-description {
+    font-size: 1rem;
+}
+
+.portfolio-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio-link {
+    color: white;
+}
