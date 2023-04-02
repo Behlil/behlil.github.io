@@ -82,9 +82,10 @@ Error generating stack: `+a.message+`
   background-color: #CBE4DE;
   padding: 2rem;
   height: 90vh;
+  margin: 0 ;
 
   @media (max-width: 768px) {
-    height: 50vh;
+    height: auto;
   }
 `,qT=Ie.h1`
   font-size: 4rem;
@@ -92,7 +93,7 @@ Error generating stack: `+a.message+`
   margin-bottom: 1rem;
 
   @media (max-width: 768px) {
-    margin-top: 4rem;
+    // margin-top: 4rem;
     font-size: 2rem;
   }
 `,KT=Ie.p`
