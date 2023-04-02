@@ -63,6 +63,7 @@ export default function Sidebar() {
                     <button className="toggle-nav" onClick={handleToggleNav}>
                         <FaBars />
                     </button>
+                    <div className="nav-title">menu </div>
                 </div>
 
                 <ul className={`nav-list ${showNav ? 'show' : ''}`}>
