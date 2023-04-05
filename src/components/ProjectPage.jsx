@@ -70,7 +70,7 @@ const ProjectsPage = () => {
                         title={project.title}
                         domain={project.domain}
                         description={project.description}
-                        tag={project.tag}
+                        tags={project.tag}
                         to={project.to}
                     />
 

@@ -7,7 +7,7 @@ const CardWrapper = styled.div`
   width: 400px;
   height: 250px;
   overflow: hidden;
-  border: 1px solid #ccc;
+  // border: 1px solid #ccc;
   margin: 10px;
   transition: transform 0.3s ease-in-out;
   &:hover {
@@ -22,8 +22,12 @@ const CardWrapper = styled.div`
 
 const CardImage = styled.img`
   width: 100%;
-  height: 100%;
+  height: 70%;
   object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+  ${CardWrapper}:hover & {
+    height: 100%;
+  }
 `;
 
 const CardContent = styled.div`
@@ -34,6 +38,12 @@ const CardContent = styled.div`
   background-color: #FF6000;
   opacity: 0.9;
   color: #fff;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  justify-content: center;
   transform: translateY(100%);
   transition: transform 0.3s ease-in-out;
   ${CardWrapper}:hover & {
@@ -43,7 +53,12 @@ const CardContent = styled.div`
 
 const CardTitle = styled.h2`
   font-size: 18px;
+  margin: 0;
   margin-bottom: 8px;
+   ${CardWrapper}:hover & {
+    display: none;
+  }
+
   
 `;
 
@@ -59,21 +74,43 @@ const ProjectLink = styled(Link)`
 
   
 `;
+const Tags = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 5px;
 
-const ProjectCard = ({ imageSrc, title, description, to }) => {
+  ${CardWrapper}:hover & {
+    display: none;
+  }
+`;
+const Tag = styled.div`
+  background-color: #eee;
+  width: fit-content;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 5px;
+`;
+const ProjectCard = ({ imageSrc, title, description, to, tags }) => {
   return (
     <CardWrapper>
       <CardImage src={imageSrc} alt={title} />
 
       <CardContent>
-        <CardTitle>{title}</CardTitle>
-        <hr />
+        {/* <CardTitle>{title}</CardTitle> */}
+
         <CardDescription>{description}</CardDescription>
         <hr />
         <ProjectLink to={to} >
           View Project
         </ProjectLink>
       </CardContent>
+      <CardTitle>{title}</CardTitle>
+      <Tags>
+        {tags.map((tag) => (
+          <Tag>{tag}</Tag>
+        ))}
+      </Tags>
     </CardWrapper>
   );
 };
