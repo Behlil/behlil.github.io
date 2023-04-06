@@ -353,11 +353,15 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px;
+  padding: 16px 3em;
   z-index: 1;
   transition: background-color 0.4s ease-in-out;
   background-color: ${({scrolled:e})=>e?"#fafafa":"transparent"};
   box-shadow: ${({scrolled:e})=>e?"0 2px 4px rgba(0, 0, 0, 0.2)":"none"};
+
+  @media (max-width: 768px) {
+    padding: 16px 1em;
+  }
 `,gZ=Ee.div`
   font-size: 32px;
   color: 
@@ -386,4 +390,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 `,ip=Ee.div`
   font-size: 24px;
   margin-right: 8px;
-`,xZ=()=>{const[e,t]=I.useState(!1);return I.useEffect(()=>{const r=()=>{const n=window.scrollY>70;n!==e&&t(n)};return document.addEventListener("scroll",r),()=>{document.removeEventListener("scroll",r)}},[e]),He(mZ,{scrolled:e,children:[Z(gZ,{children:"Ouassim Behlil"}),He(bZ,{children:[Z(np,{href:"https://www.linkedin.com/",children:Z(ip,{children:Z(NQ,{})})}),Z(np,{href:"https://www.instagram.com/",children:Z(ip,{children:Z(IQ,{})})}),Z(np,{href:"https://github.com/",children:Z(ip,{children:Z(MQ,{})})})]})]})};function wZ(){return He("div",{className:"app",children:[Z(xZ,{}),Z("div",{className:"content",children:He(jk,{children:[Z(Gu,{path:"/",element:Z(vZ,{})}),Z(Gu,{path:"/experience",element:Z(yZ,{})}),Z(Gu,{path:"*",element:Z("h1",{children:"404: Not Found"})})]})})]})}op.createRoot(document.getElementById("root")).render(Z(A.StrictMode,{children:Z(Fk,{children:Z(wZ,{})})}));
+`,xZ=()=>{const[e,t]=I.useState(!1);return I.useEffect(()=>{const r=()=>{const n=window.scrollY>70;n!==e&&t(n)};return document.addEventListener("scroll",r),()=>{document.removeEventListener("scroll",r)}},[e]),He(mZ,{scrolled:e,children:[Z(gZ,{children:"Ouassim Behlil"}),He(bZ,{children:[Z(np,{href:"https://www.linkedin.com/in/behlil/",target:"_blank",children:Z(ip,{children:Z(NQ,{})})}),Z(np,{href:"https://www.instagram.com/ouassim_01",target:"_blank",children:Z(ip,{children:Z(IQ,{})})}),Z(np,{href:"https://github.com/behlil",target:"_blank",children:Z(ip,{children:Z(MQ,{})})})]})]})};function wZ(){return He("div",{className:"app",children:[Z(xZ,{}),Z("div",{className:"content",children:He(jk,{children:[Z(Gu,{path:"/",element:Z(vZ,{})}),Z(Gu,{path:"/experience",element:Z(yZ,{})}),Z(Gu,{path:"*",element:Z("h1",{children:"404: Not Found"})})]})})]})}op.createRoot(document.getElementById("root")).render(Z(A.StrictMode,{children:Z(Fk,{children:Z(wZ,{})})}));
