@@ -10,11 +10,15 @@ const HeaderWrapper = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px;
+  padding: 16px 3em;
   z-index: 1;
   transition: background-color 0.4s ease-in-out;
   background-color: ${({ scrolled }) => (scrolled ? '#fafafa' : 'transparent')};
   box-shadow: ${({ scrolled }) => (scrolled ? '0 2px 4px rgba(0, 0, 0, 0.2)' : 'none')};
+
+  @media (max-width: 768px) {
+    padding: 16px 1em;
+  }
 `;
 
 const HeaderLogo = styled.div`
@@ -75,26 +79,26 @@ const Header = () => {
     <HeaderWrapper scrolled={scrolled}>
       <HeaderLogo>Ouassim Behlil</HeaderLogo>
       <HeaderNav>
-        <HeaderLink href="https://www.linkedin.com/">
+        <HeaderLink href="https://www.linkedin.com/in/behlil/" target="_blank" >
           <HeaderIcon>
             <FaLinkedin />
           </HeaderIcon>
-          
+
         </HeaderLink>
-        <HeaderLink href="https://www.instagram.com/">
+        <HeaderLink href="https://www.instagram.com/ouassim_01" target="_blank">
           <HeaderIcon>
             <FaInstagram />
           </HeaderIcon>
-          
+
         </HeaderLink>
-        <HeaderLink href="https://github.com/">
+        <HeaderLink href="https://github.com/behlil" target="_blank">
           <HeaderIcon>
             <FaGithub />
           </HeaderIcon>
-          
+
         </HeaderLink>
       </HeaderNav>
-    </HeaderWrapper>
+    </HeaderWrapper >
   );
 };
 

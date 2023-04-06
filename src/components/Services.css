@@ -12,7 +12,7 @@
 .services h2 {
     font-size: 2rem;
     margin-bottom: 50px;
-    color: #fa4109;
+    color: #454545;
 }
 
 .services-container {
@@ -26,26 +26,27 @@
 .service {
     display: flex;
     /* margin: 30px; */
-    width: 500px;
+    width: 400px;
     align-items: center;
     background-color: #fafafa;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 10px 20px;
 }
 
 .service-icon {
     margin-right: 20px;
     font-size: 2rem;
-    color: #fa4109;
+    color: #0969fa;
 }
 
 .service-title {
+    color: #0969fa;
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
 .service-description {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.5;
 }
 
