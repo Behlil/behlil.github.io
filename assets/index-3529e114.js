@@ -89,7 +89,7 @@ Error generating stack: `+a.message+`
   }
 `,HT=Ee.h1`
   font-size: 4rem;
-  color: #272343;
+  color: #454545;
   margin-top: 4rem;
 
   @media (max-width: 768px) {
@@ -336,11 +336,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   justify-content: center;
   gap: 10px; // Use flexbox gap to create space between items
 `,cZ=Ee.h1`
-    font-size: 2.5rem;
+    font-size: 4rem;
     font-weight: 700;
     text-align: center;
     margin: 2rem 0;
-    color: #333;
+    color: #454545;
 `,fZ=Ee.div`
     
     background: #fff;
