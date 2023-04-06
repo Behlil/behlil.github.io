@@ -21,7 +21,7 @@ const Introduction = styled.section`
 const Heading = styled.h1`
   font-size: 4rem;
   color: #272343;
-  margin-bottom: 1rem;
+  margin-top: 4rem;
 
   @media (max-width: 768px) {
     // margin-top: 4rem;
@@ -33,20 +33,28 @@ const Heading = styled.h1`
 const Paragraph = styled.p`
   font-size: 1.5rem;
   color: #666666;
-  text-align: center;
+  text-align: left;
   max-width: 800px;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;
 
 
 const Intro = () => {
   return (
     <Introduction>
-      <Heading>Hello, I'm Ouassim Behlil</Heading>
+      <Heading>About me</Heading>
       <Paragraph>
-        I have a passion for solving complex problems and helping organizations
-        make better decisions. My love for mathematics and probabilities has led
-        me to this dynamic field, where I can apply my analytical skills and
-        expertise to make sense of complex data sets.
+        As a curious mind with a passion for problem-solving, I stumbled upon the world
+        of data analytics while delving into the intricacies of mathematics and probability.
+        What started as a mere curiosity quickly turned into an all-consuming passion for telling
+        compelling stories through data visualization and making complex concepts appear effortless.
+        My journey as a data analyst has taught me that the true art of data lies not just in numbers,
+        but in the ability to communicate insights and drive results. And so, armed with my love for
+        numbers, my eye for design, and my passion for creating impact,I am eager to take on the
+        world of data analytics and make my mark in this exciting field.
       </Paragraph>
     </Introduction>
   );

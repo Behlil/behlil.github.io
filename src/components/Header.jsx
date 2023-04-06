@@ -1,19 +1,101 @@
-import React from 'react';
-import { FaGithub, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
-import './header.css';
+import React, { useState, useEffect } from 'react';
+import styled from 'styled-components';
+import { FaLinkedin, FaInstagram, FaGithub } from 'react-icons/fa';
 
-export default function Header() {
-    return (
-        <div className="header">
-            <div className="header__left">
-                <h1> Ouassim behlil</h1>
-            </div>
-            <div className="header__right">
-                <a href="https://github.com/behlil"><FaGithub /></a>
-                <a href="https://twitter.com/behlil"><FaTwitter /></a>
-                <a href="https://linkedin.com/in/behlil"><FaLinkedinIn /></a>
-            </div>
-        </div>
-    );
-}
+const HeaderWrapper = styled.header`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  z-index: 1;
+  transition: background-color 0.4s ease-in-out;
+  background-color: ${({ scrolled }) => (scrolled ? '#fafafa' : 'transparent')};
+  box-shadow: ${({ scrolled }) => (scrolled ? '0 2px 4px rgba(0, 0, 0, 0.2)' : 'none')};
+`;
 
+const HeaderLogo = styled.div`
+  font-size: 32px;
+  color: 
+  font-weight: bold;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+`;
+
+const HeaderNav = styled.nav`
+  display: flex;
+`;
+
+const HeaderLink = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 24px;
+  color: ${({ scrolled }) => (scrolled ? '#fff' : '#000')};
+  text-decoration: none;
+
+  
+  
+  &:hover {
+    color: #f00;
+  }
+
+  
+`;
+
+const HeaderIcon = styled.div`
+  font-size: 24px;
+  margin-right: 8px;
+`;
+
+const Header = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 70;
+      if (isScrolled !== scrolled) {
+        setScrolled(isScrolled);
+      }
+    };
+
+    document.addEventListener('scroll', handleScroll);
+
+    return () => {
+      document.removeEventListener('scroll', handleScroll);
+    };
+  }, [scrolled]);
+
+  return (
+    <HeaderWrapper scrolled={scrolled}>
+      <HeaderLogo>Ouassim Behlil</HeaderLogo>
+      <HeaderNav>
+        <HeaderLink href="https://www.linkedin.com/">
+          <HeaderIcon>
+            <FaLinkedin />
+          </HeaderIcon>
+          
+        </HeaderLink>
+        <HeaderLink href="https://www.instagram.com/">
+          <HeaderIcon>
+            <FaInstagram />
+          </HeaderIcon>
+          
+        </HeaderLink>
+        <HeaderLink href="https://github.com/">
+          <HeaderIcon>
+            <FaGithub />
+          </HeaderIcon>
+          
+        </HeaderLink>
+      </HeaderNav>
+    </HeaderWrapper>
+  );
+};
+
+export default Header;

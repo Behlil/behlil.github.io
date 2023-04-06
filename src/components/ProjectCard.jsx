@@ -4,25 +4,27 @@ import styled from 'styled-components';
 
 const CardWrapper = styled.div`
   position: relative;
+  box-sizing: border-box;
   width: 400px;
-  height: 250px;
+  height: 300px;
   overflow: hidden;
   // border: 1px solid #ccc;
   margin: 10px;
   transition: transform 0.3s ease-in-out;
+
   &:hover {
     transform: scale(1.03);
   }
 
   @media (max-width: 768px) {
     width: 80%;
-    height: 250px;
+    height: 350px;
   }
 `;
 
 const CardImage = styled.img`
   width: 100%;
-  height: 70%;
+  height: 65%;
   object-fit: cover;
   transition: transform 0.3s ease-in-out;
   ${CardWrapper}:hover & {
@@ -34,20 +36,22 @@ const CardContent = styled.div`
   position: absolute;
   bottom: 0;
   left: 0;
+  background-color: #F6F1E9;
+  opacity: 0.87;
+  color: #000;
+  height: 100%;
   padding: 16px;
-  background-color: #FF6000;
-  opacity: 0.9;
-  color: #fff;
-  height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   transform: translateY(100%);
   transition: transform 0.3s ease-in-out;
+  box-sizing: border-box;
   ${CardWrapper}:hover & {
     transform: translateY(0);
+    width: 100%;
   }
 `;
 
@@ -63,13 +67,14 @@ const CardTitle = styled.h2`
 `;
 
 const CardDescription = styled.p`
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 0;
+  width: 90%;
 `;
 
 const ProjectLink = styled(Link)`
   text-decoration: none;
-  color: #fff;
+  color: #000;
   font-size: 14px;
 
   
@@ -88,8 +93,15 @@ const Tag = styled.div`
   background-color: #eee;
   width: fit-content;
   padding: 5px;
-  font-size: 12px;
+  font-size: 11px;
   border-radius: 5px;
+`;
+
+const Line = styled.hr`
+  
+  width: 20%;
+  border: 1px solid #000;
+  margin: 10px 0;
 `;
 const ProjectCard = ({ imageSrc, title, description, to, tags }) => {
   return (
@@ -97,10 +109,8 @@ const ProjectCard = ({ imageSrc, title, description, to, tags }) => {
       <CardImage src={imageSrc} alt={title} />
 
       <CardContent>
-        {/* <CardTitle>{title}</CardTitle> */}
-
         <CardDescription>{description}</CardDescription>
-        <hr />
+        <Line />
         <ProjectLink to={to} >
           View Project
         </ProjectLink>

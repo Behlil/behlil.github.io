@@ -33,25 +33,26 @@ const ProjectsPage = () => {
         {
             title: "House Price Prediction Competition",
             domain: "Web Development",
-            description: "A web app that uses D3.js to create interactive charts and graphs.",
+            description: "This project aims to predict the sale price of residential homes in Ames, Iowa based on 79 explanatory variables. The project uses a dataset from a Kaggle competition, which contains 1460 training examples and 1459 test examples. The project applies various feature engineering techniques, such as creating new features, encoding categorical variables, and handling missing values.",
             image: house_img,
-            tag: ["React", "D3", "JavaScript"],
+            tag: ["Python", "pandas", "scikit-learn", "matplotlib", "seaborn"],
             to: "https://github.com/Behlil/House-Price-Competition"
         },
         {
             title: "MNIST Handwritten Digit Recognition",
             domain: "Machine Learning",
-            description: "A Python script that uses natural language processing to analyze the sentiment of text.",
+            description: "This project aims to recognize handwritten digits using convolutional neural networks (CNNs) in Python with Keras. The project uses the MNIST dataset, which contains 70,000 images of handwritten digits from 0 to 9. The project trains a five-layer CNN model on the dataset and achieves an accuracy of 98.51%.",
             image: digits_img,
-            tag: ["Python", "NLP", "scikit-learn"],
+            tag: [ "Python", "keras", "tensorflow", "numpy"],
             to: "https://github.com/Behlil/MNIST-Handwritten-Digit-Recognition"
         },
         {
-            title: "E-commerce Website with Shopify",
+            title: "Hospital Readmission Analysis",
             domain: "Web Development",
-            description: "A fully functional e-commerce website that sells products online.",
+            description: "This project aims to reduce hospital readmissions by using machine learning models to predict the risk of readmission for patients with diabetes. The project uses a dataset from the UCI Machine Learning Repository that contains clinical and administrative information of over 100,000 hospital admissions. The project explores different features, models, and evaluation metrics to find the best way to identify high-risk patients and provide recommendations for improving their care transitions.",
             image: hosp_readmission,
-            tag: ["Shopify", "HTML", "CSS"]
+            tag: [ "Python", "pandas", "numpy", "scikit-learn", "XGBoost"],
+            to: "https://github.com/Behlil/Reduce-Hospital-Readmissions"
         }
     ];
 

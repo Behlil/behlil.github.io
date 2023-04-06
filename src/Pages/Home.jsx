@@ -4,16 +4,16 @@ import "./home.css"
 import SkillsRadar from '../components/SkillsRadar'
 import Contact from '../components/Contact'
 import ProjectsPage from '../components/ProjectPage'
-import MyEducation from '../components/MyEducation'
+import Services from '../components/Services'
 
 
 export default function Home() {
     return (
         <div className='home'>
             <Introduction />
-            <ProjectsPage />
-            <MyEducation />
             <SkillsRadar />
+            <ProjectsPage />
+            <Services />
             <Contact />
         </div>
     )
