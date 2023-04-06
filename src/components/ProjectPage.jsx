@@ -15,11 +15,11 @@ const ProjectsContainer = styled.div`
 `;
 
 const Title = styled.h1`
-    font-size: 2.5rem;
+    font-size: 4rem;
     font-weight: 700;
     text-align: center;
     margin: 2rem 0;
-    color: #333;
+    color: #454545;
 `;
 const Container = styled.div`
     

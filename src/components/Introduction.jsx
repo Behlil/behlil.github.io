@@ -20,7 +20,7 @@ const Introduction = styled.section`
 // Create a styled component for the heading
 const Heading = styled.h1`
   font-size: 4rem;
-  color: #272343;
+  color: #454545;
   margin-top: 4rem;
 
   @media (max-width: 768px) {
