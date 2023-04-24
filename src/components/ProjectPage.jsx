@@ -39,14 +39,6 @@ const ProjectsPage = () => {
             to: "https://github.com/Behlil/Analyzing-Customer-Churn-using-Power-BI"
         },
         {
-            title: "MNIST Handwritten Digit Recognition",
-            domain: "Machine Learning",
-            description: "This project aims to recognize handwritten digits using convolutional neural networks (CNNs) in Python with Keras. The project uses the MNIST dataset, which contains 70,000 images of handwritten digits from 0 to 9. The project trains a five-layer CNN model on the dataset and achieves an accuracy of 98.51%.",
-            image: digits_img,
-            tag: [ "Python", "keras", "tensorflow", "numpy"],
-            to: "https://github.com/Behlil/MNIST-Handwritten-Digit-Recognition"
-        },
-        {
             title: "Hospital Readmission Analysis",
             domain: "Web Development",
             description: "This project aims to reduce hospital readmissions by using machine learning models to predict the risk of readmission for patients with diabetes. The project uses a dataset from the UCI Machine Learning Repository that contains clinical and administrative information of over 100,000 hospital admissions. The project explores different features, models, and evaluation metrics to find the best way to identify high-risk patients and provide recommendations for improving their care transitions.",
