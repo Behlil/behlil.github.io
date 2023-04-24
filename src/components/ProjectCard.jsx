@@ -6,14 +6,14 @@ const CardWrapper = styled.div`
   position: relative;
   box-sizing: border-box;
   width: 400px;
-  height: 300px;
+  height: 400px;
   overflow: hidden;
   // border: 1px solid #ccc;
   margin: 10px;
   transition: transform 0.3s ease-in-out;
 
   &:hover {
-    transform: scale(1.03);
+    transform: scale(1.01);
   }
 
   @media (max-width: 768px) {
@@ -24,7 +24,7 @@ const CardWrapper = styled.div`
 
 const CardImage = styled.img`
   width: 100%;
-  height: 65%;
+  height: 80%;
   object-fit: cover;
   transition: transform 0.3s ease-in-out;
   ${CardWrapper}:hover & {

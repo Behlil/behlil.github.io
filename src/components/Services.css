@@ -19,7 +19,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1em;
+    gap: 1.3em;
     width: 100%;
 }
 
@@ -31,6 +31,15 @@
     background-color: #fafafa;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .service-icon {
@@ -40,7 +49,7 @@
 }
 
 .service-title {
-    color: #0969fa;
+    color: #454545;
     font-size: 1.5rem;
     margin-bottom: 10px;
 }

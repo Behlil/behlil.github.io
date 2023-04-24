@@ -5,6 +5,7 @@ import SkillsRadar from '../components/SkillsRadar'
 import Contact from '../components/Contact'
 import ProjectsPage from '../components/ProjectPage'
 import Services from '../components/Services'
+import Certifications from '../components/Certification'
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
             <SkillsRadar />
             <ProjectsPage />
             <Services />
+            <Certifications />
             <Contact />
         </div>
     )

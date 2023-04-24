@@ -23,8 +23,8 @@ const HeaderWrapper = styled.header`
 
 const HeaderLogo = styled.div`
   font-size: 32px;
-  color: 
   font-weight: bold;
+  cursor: pointer;
 
   @media (max-width: 768px) {
     font-size: 20px;
@@ -42,11 +42,13 @@ const HeaderLink = styled.a`
   margin-right: 24px;
   color: ${({ scrolled }) => (scrolled ? '#fff' : '#000')};
   text-decoration: none;
+  transition: color 0.4s ease-in-out;
 
   
   
   &:hover {
-    color: #f00;
+    color: #0969fa;
+    transform: scale(1.2);
   }
 
   
@@ -77,7 +79,7 @@ const Header = () => {
 
   return (
     <HeaderWrapper scrolled={scrolled}>
-      <HeaderLogo>Ouassim Behlil</HeaderLogo>
+      <HeaderLogo scrolled={scrolled}>Ouassim Behlil</HeaderLogo>
       <HeaderNav>
         <HeaderLink href="https://www.linkedin.com/in/behlil/" target="_blank" >
           <HeaderIcon>

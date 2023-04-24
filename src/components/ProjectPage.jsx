@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import house_img from "../Images/house-price.jpg";
+import churn_img from "../Images/churn-analysis.jpg";
 import digits_img from "../Images/digits-rec.jpg";
 import hosp_readmission from "../Images/hospital-readmission.jpg";
 import ProjectCard from "./ProjectCard";
@@ -31,12 +31,12 @@ const ProjectsPage = () => {
 
     const projects = [
         {
-            title: "House Price Prediction Competition",
-            domain: "Web Development",
-            description: "This project aims to predict the sale price of residential homes in Ames, Iowa based on 79 explanatory variables. The project uses a dataset from a Kaggle competition, which contains 1460 training examples and 1459 test examples. The project applies various feature engineering techniques, such as creating new features, encoding categorical variables, and handling missing values.",
-            image: house_img,
-            tag: ["Python", "pandas", "scikit-learn", "matplotlib", "seaborn"],
-            to: "https://github.com/Behlil/House-Price-Competition"
+            title: "Customer Churn Analysis",
+            domain: "Telecom Industry",
+            description: "Analyze customer churn using Power BI and a telecom dataset. Explore the factors and segments that affect customer retention and loyalty. Provide recommendations to reduce churn and increase satisfaction.",
+            image: churn_img,
+            tag: ["Power BI", "DAX"],
+            to: "https://github.com/Behlil/Analyzing-Customer-Churn-using-Power-BI"
         },
         {
             title: "MNIST Handwritten Digit Recognition",
