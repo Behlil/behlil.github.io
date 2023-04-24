@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import churn_img from "../Images/churn-analysis.jpg";
-import digits_img from "../Images/digits-rec.jpg";
+import churn_img from "../Images/Churn-analysis.jpg";
 import hosp_readmission from "../Images/hospital-readmission.jpg";
 import ProjectCard from "./ProjectCard";
 

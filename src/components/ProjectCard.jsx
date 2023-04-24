@@ -5,15 +5,15 @@ import styled from 'styled-components';
 const CardWrapper = styled.div`
   position: relative;
   box-sizing: border-box;
-  width: 400px;
+  width: 500px;
   height: 400px;
   overflow: hidden;
   // border: 1px solid #ccc;
   margin: 10px;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.6s ease-in-out;
 
   &:hover {
-    transform: scale(1.01);
+    transform: scale(1.001);
   }
 
   @media (max-width: 768px) {
