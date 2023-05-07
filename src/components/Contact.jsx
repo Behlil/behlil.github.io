@@ -40,7 +40,7 @@ const ContactItem = styled.li`
 
 const ContactIcon = styled.span`
   font-size: 1.5rem;
-  color: #333;
+  color: #19A7CE;
   margin-right: 0.5rem;
 `;
 
@@ -51,7 +51,7 @@ const ContactText = styled.span`
 const Sep = styled.hr`
     width: 6%;
     height: 3px;
-    background: #f00;
+    background: #19A7CE;
     border: none;
     margin-bottom: 2rem ;
 

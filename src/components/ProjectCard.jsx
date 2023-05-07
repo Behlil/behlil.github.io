@@ -8,12 +8,11 @@ const CardWrapper = styled.div`
   width: 500px;
   height: 400px;
   overflow: hidden;
-  // border: 1px solid #ccc;
   margin: 10px;
   transition: transform 0.6s ease-in-out;
 
   &:hover {
-    transform: scale(1.001);
+    border: 1px solid #eee;
   }
 
   @media (max-width: 768px) {
@@ -26,7 +25,7 @@ const CardImage = styled.img`
   width: 100%;
   height: 80%;
   object-fit: cover;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 1s ease-in-out;
   ${CardWrapper}:hover & {
     height: 100%;
   }
@@ -36,8 +35,8 @@ const CardContent = styled.div`
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #F6F1E9;
-  opacity: 0.87;
+  background-color: #F6F1F1;
+  opacity: 0.90;
   color: #000;
   height: 100%;
   padding: 16px;
@@ -47,7 +46,7 @@ const CardContent = styled.div`
   align-items: center;
   justify-content: center;
   transform: translateY(100%);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 1s ease-in-out;
   box-sizing: border-box;
   ${CardWrapper}:hover & {
     transform: translateY(0);
@@ -59,6 +58,7 @@ const CardTitle = styled.h2`
   font-size: 18px;
   margin: 0;
   margin-bottom: 8px;
+  color: #146C94;
    ${CardWrapper}:hover & {
     display: none;
   }
@@ -67,7 +67,7 @@ const CardTitle = styled.h2`
 `;
 
 const CardDescription = styled.p`
-  font-size: 12px;
+  font-size: 16px;
   margin-bottom: 0;
   width: 90%;
 `;

@@ -13,7 +13,7 @@ const HeaderWrapper = styled.header`
   padding: 16px 3em;
   z-index: 1;
   transition: background-color 0.4s ease-in-out;
-  background-color: ${({ scrolled }) => (scrolled ? '#fafafa' : 'transparent')};
+  background-color: ${({ scrolled }) => (scrolled ? '#19A7CE' : 'transparent')};
   box-shadow: ${({ scrolled }) => (scrolled ? '0 2px 4px rgba(0, 0, 0, 0.2)' : 'none')};
 
   @media (max-width: 768px) {
@@ -25,6 +25,7 @@ const HeaderLogo = styled.div`
   font-size: 32px;
   font-weight: bold;
   cursor: pointer;
+  color: ${({ scrolled }) => (scrolled ? '#F6F1F1' : '#000')};
 
   @media (max-width: 768px) {
     font-size: 20px;
@@ -40,15 +41,16 @@ const HeaderLink = styled.a`
   align-items: center;
   justify-content: center;
   margin-right: 24px;
-  color: ${({ scrolled }) => (scrolled ? '#fff' : '#000')};
+  font-size: 20px;
+  color: ${({ scrolled }) => (scrolled ? '#F6F1F1' : '#000')};
   text-decoration: none;
   transition: color 0.4s ease-in-out;
 
   
   
   &:hover {
-    color: #0969fa;
-    transform: scale(1.2);
+    color: #fff;
+    transform: scale(1.1);
   }
 
   
@@ -81,19 +83,19 @@ const Header = () => {
     <HeaderWrapper scrolled={scrolled}>
       <HeaderLogo scrolled={scrolled}>Ouassim Behlil</HeaderLogo>
       <HeaderNav>
-        <HeaderLink href="https://www.linkedin.com/in/behlil/" target="_blank" >
+        <HeaderLink scrolled={scrolled} href="https://www.linkedin.com/in/behlil/" target="_blank" >
           <HeaderIcon>
             <FaLinkedin />
           </HeaderIcon>
 
         </HeaderLink>
-        <HeaderLink href="https://www.instagram.com/ouassim_01" target="_blank">
+        <HeaderLink scrolled={scrolled} href="https://www.instagram.com/ouassim_01" target="_blank">
           <HeaderIcon>
             <FaInstagram />
           </HeaderIcon>
 
         </HeaderLink>
-        <HeaderLink href="https://github.com/behlil" target="_blank">
+        <HeaderLink scrolled={scrolled} href="https://github.com/behlil" target="_blank">
           <HeaderIcon>
             <FaGithub />
           </HeaderIcon>

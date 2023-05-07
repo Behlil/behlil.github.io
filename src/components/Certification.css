@@ -2,7 +2,7 @@
     .certifications {
         padding-top: 2rem;
         padding: 1em 4em;
-        background-color: #0969fa;
+        background-color: #eee;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -14,7 +14,7 @@
         font-weight: bold;
         margin-bottom: 1rem;
         text-align: center;
-        color: #F5F5F5;
+        color: #000;
     }
 
     .certifications ul {
@@ -31,10 +31,10 @@
     .certifications li {
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
         border-radius: 4px;
-        background: #F5F5F5;
-        color: #292727;
+        background: #146C94;
+        color: #F6F1F1;
         padding: 1em;
-        width: 350px;
+        width: 400px;
         height: 100px;
         display: flex;
         flex-direction: row;
@@ -48,6 +48,7 @@
 
     .certifications .logo {
         width: 4rem;
+        color: #eee;
     }
 
     .certifications span {
@@ -55,11 +56,13 @@
         font-weight: bold;
     }
 }
+
 @media screen and (max-width: 600px) {
     .certifications {
         margin-top: 2rem;
-        padding: 1em ;
-        background-color: #0969fa;
+        padding: 1em;
+        background-color: #000000;
+        color: #F6F1F1;
     }
 
     .certifications h2 {
@@ -67,7 +70,7 @@
         font-weight: bold;
         /* margin-bottom: 1rem; */
         text-align: center;
-        color: #F5F5F5;
+        color: #F6F1F1;
     }
 
     .certifications ul {
@@ -84,7 +87,7 @@
     .certifications li {
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
         border-radius: 4px;
-        color: #292727;
+        color: #F6F1F1;
         padding: 1em;
         width: 94%;
         display: flex;

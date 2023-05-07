@@ -7,7 +7,7 @@ const Introduction = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #CBE4DE;
+  background-color: #F6F1F1;
   padding: 2rem;
   height: 90vh;
   margin: 0 ;
