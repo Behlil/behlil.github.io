@@ -356,7 +356,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   padding: 16px 3em;
   z-index: 1;
   transition: background-color 0.4s ease-in-out;
-  background-color: ${({scrolled:e})=>e?"#19A7CE":"transparent"};
+  background-color: ${({scrolled:e})=>e?"#212A3E":"transparent"};
   box-shadow: ${({scrolled:e})=>e?"0 2px 4px rgba(0, 0, 0, 0.2)":"none"};
 
   @media (max-width: 768px) {
